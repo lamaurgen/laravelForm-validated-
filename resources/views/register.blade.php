@@ -22,7 +22,7 @@
             <h1>Registration</h1>
             <div class="mb-3">
               <label for="">Name</label>
-              <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('name')}}">
               <div class="form-text"></div> <span class="text-danger">
                 @error('name')
                 {{$message}}
@@ -32,7 +32,7 @@
             </div>
             <div class="mb-3">
                 <label for="">Email</label>
-                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('email')}}">
                 <div class="form-text"></div> <span class="text-danger">
                   @error('email')
                   {{$message}}
