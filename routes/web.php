@@ -1,10 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
-use App\Http\Controllers\LamaUrgen;
-use App\Http\Controllers\PhotoController;
-/*
+use App\Http\Controllers\DemoController;
+ use App\Http\Controllers\SingleActionController;
+ use App\Http\Controllers\PhotoController;
+ use App\Http\Controllers\RegistrationController;
+
+
+ /*
+
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -46,10 +50,10 @@ use App\Http\Controllers\PhotoController;
 //     return view('about');
 // });
 //  
-
-
-Route:: get('/{name?}', function ($name=null){
-  $data=compact ('name');
-  return view ('home')-> with($data);
-
-});
+ 
+Route :: get ('/', [DemoController::class, 'index']);
+Route:: get ('/about',[DemoController::class, 'about']);
+Route:: get ('/courses', SingleActionController::class);
+Route::resource('photo', PhotoController::class);
+Route::get ('/register',[RegistrationController::class,'style']);
+Route::post ('/register', [RegistrationController::class, 'register']); 

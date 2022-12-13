@@ -13,7 +13,7 @@ class PhotoController extends Controller
      */
     public function index()
     {
-      echo "lama";
+        echo 'lamaa';
     }
 
     /**
@@ -23,7 +23,7 @@ class PhotoController extends Controller
      */
     public function create()
     {
-      echo"create";
+        echo 'lamo';
     }
 
     /**
@@ -34,7 +34,7 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        // 
+        //
     }
 
     /**

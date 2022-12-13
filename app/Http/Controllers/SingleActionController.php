@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LamaUrgen extends Controller
+class SingleActionController extends Controller
 {
     /**
      * Handle the incoming request.
@@ -14,6 +14,6 @@ class LamaUrgen extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view ('dashboard');
+        return view ('courses');
     }
 }
