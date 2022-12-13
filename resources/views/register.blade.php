@@ -52,9 +52,9 @@
               </div>
               <div class="mb-3">
                 <label for="">Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="password" name="password_confirmation" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div  class="form-text"></div> <span class="text-danger">
-                  @error('confirm_password')
+                  @error('password_confirmation')
                   {{$message}}
                       
                   @enderror
